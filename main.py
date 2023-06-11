@@ -21,7 +21,7 @@ app.add_middleware(
 
 @app.get("/")
 async def read_root():
-    return {"Hello! Location, Area, Bed, Bath are the parameters. Go to /prediction and get prediction of rental price. There're list of cities in a secret file :3."}
+    return {"Hello! Location, Area, Bed, Bath are the parameters. Go to /prediction and get prediction of rental price. There's a list of available cities in a secret file :3."}
 
 @app.get("/prediction")
 async def get_prediction(location: str, area: str, bed: str, bath: str):
